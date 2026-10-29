@@ -65,7 +65,7 @@
                         <td><span class="badge badge-info">{{ $row->status ?? 'Proses' }}</span></td>
                         @if(Auth::user()->role === 'Admin')
                             <td>
-                                <a href="/pembayaran/verifikasi/{{ $row->id }}" class="btn btn-sm btn-success">Verifikasi</a>
+                                <a href="/verifikasi-pembayaran/{{ $row->id }}" class="btn btn-sm btn-success">Verifikasi</a>
                             </td>
                         @endif
                     </tr>
